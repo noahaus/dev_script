@@ -1,8 +1,8 @@
 #PBS -S /bin/bash
 #PBS -q batch
-#PBS -N BWA align and Sort BAM
+#PBS -N BWA_align_and_Sort_BAM
 #PBS -l nodes=1:ppn=4:AMD
-#PBS -l walltime= 72:00:00
+#PBS -l walltime=72:00:00
 #PBS -l mem=16gb
 #PBS -M noahaus@uga.edu
 #PBS -m abe
@@ -23,5 +23,8 @@ echo
 
 python pairread2sortBAM.py NC_002945v4.fasta
 cd full_bam_output
+cp NC_002945v4.fasta -t full_bam_output
 python remove_duplicates.py
 cd full_nodup_bam_output
+cp NC_002945v4.fasta -t full_nodup_bam_output
+python variant_call.py
