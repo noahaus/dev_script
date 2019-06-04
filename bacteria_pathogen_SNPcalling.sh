@@ -11,6 +11,7 @@ cd $PBS_O_WORKDIR
 module add BWA/0.7.17-foss-2016b
 module add SAMtools/1.9-foss-2016b
 module add picard/2.16.0-Java-1.8.0_144
+module add RAxML/8.2.11-foss-2016b-mpi-avx
 
 
 echo
