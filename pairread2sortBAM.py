@@ -50,8 +50,9 @@ for i in range(len(R1_list)):
 
 print("Sorted BAM files created and ready to be moved")
 os.system("rm R_1.txt R_2.txt output.quiet.log")
-os.system("mkdir full_bam_output")
-os.system("mv *.sorted.bam -t full_bam_output")
+os.system("cd output_dir")
+os.system("mkdir basic")
+os.system("mv ../*.sorted.bam -t basic")
 
 
 print("DONE")

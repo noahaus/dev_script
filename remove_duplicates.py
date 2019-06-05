@@ -26,9 +26,9 @@ for i in range(len(bam_list)):
 
 
 print("non duplicate BAM files created and ready to be moved")
-os.system("mkdir full_nodup_bam_output")
-os.system("mkdir nodup_metrics")
-os.system("mv *nodup.sorted.bam -t full_nodup_bam_output")
-os.system("mv *metric.txt -t nodup_metrics")
+os.system("mkdir ../nodup")
+os.system("mkdir ../nodup/nodup_metrics")
+os.system("mv *nodup.sorted.bam -t ../nodup")
+os.system("mv *metric.txt -t ../nodup/nodup_metrics")
 
 print("DONE")
