@@ -7,16 +7,16 @@
 #PBS -M noahaus@uga.edu
 #PBS -m abe
 
-cd $PBS_O_WORKDIR
-OUT=$PBS_O_WORKDIR/output_dir
-BAM=$PBS_O_WORKDIR/output_dir/BAM
-BASIC=$PBS_O_WORKDIR/output_dir/BAM/basic
-NODUP=$PBS_O_WORKDIR/output_dir/BAM/nodup
-VCF=$PBS_O_WORKDIR/output_dir/VCF
-FILTER=$PBS_O_WORKDIR/output_dir/VCF/filtered
-PILEUP=$PBS_O_WORKDIR/output_dir/VCF/pileup
-RAW=$PBS_O_WORKDIR/output_dir/VCF/raw
-RAXML=$PBS_O_WORKDIR/output_dir/RAXML
+#cd $PBS_O_WORKDIR
+OUT=output_dir
+BAM=output_dir/BAM
+BASIC=output_dir/BAM/basic
+NODUP=output_dir/BAM/nodup
+VCF=output_dir/VCF
+FILTER=output_dir/VCF/filtered
+PILEUP=output_dir/VCF/pileup
+RAW=output_dir/VCF/raw
+RAXML=output_dir/RAXML
 
 mkdir $OUT $BAM $BASIC $NODUP $VCF $FILTER $PILEUP $RAW $RAXML
 
