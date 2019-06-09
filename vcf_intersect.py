@@ -16,4 +16,4 @@ for line in vcf:
 for i in range(len(vcf_list)):
     vcf_string = vcf_string+vcf_list[i]+" "
 
-os.system('bcftools isec -n='+len(vcf_list)+' '+vcf_string)
+os.system('bcftools isec -c snps -c indels -n='+len(vcf_list)+' '+vcf_string)
